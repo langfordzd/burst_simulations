@@ -302,3 +302,5 @@ def which_recovered(recov):
    
     return recovered, possible, falses, avg, repeat, quicks,nanavg# true_count#, chars_['n_secs'].mean(), chars_['amp'].mean()
 #%%
+def flatten(l):
+    return [item for sublist in l for item in sublist]
