@@ -21,7 +21,6 @@ import seaborn as sns
 import itertools
 import time
 cm = sns.color_palette("rocket_r", as_cmap=True)
-import help_funcs as hf
 import ray
 #%%
 @ray.remote
@@ -38,7 +37,7 @@ def function(t_num, cycles,probabs,sims_per,wavelets,dists,max_rsq_is6):
             result.append(dp_result)
         et = time.time()
         print('Execution time:', et-st, 'seconds', d+1, 'out of', len(dists))    
-    chars = pd.DataFrame(hf.flatten(result), columns=['ths', 'rsq', 'recov_fr', 'count', 'rec', 'falses', 
+    chars = pd.DataFrame(tm.flatten(result), columns=['ths', 'rsq', 'recov_fr', 'count', 'rec', 'falses', 
     'avg', 'reps', 'true_count','possible','quicks','prob','dist','snr2','nanavg',
     'raw_med', 'p', 'shape','scale','loc'])
     return chars
