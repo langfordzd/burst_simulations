@@ -661,7 +661,7 @@ def fig3(cut_hi_t,cut_mi_t,cut_lo_t,cut_hi_s,cut_lo_s):
     yticklabels = ['0', '100']
     # counts are 4 and 11
     for i,c in cut_lo_t.iterrows():
-        xtr_0_a.hist(c[11],bins=np.linspace(-1, 10, 10), 
+        xtr_0_a.hist(c[9],bins=np.linspace(-1, 10, 10), 
             histtype=u'bar', density=False)
         xtr_0_a.set_xticks(xticks)
         xtr_0_a.set_xticklabels(xticklabels)   
@@ -671,7 +671,7 @@ def fig3(cut_hi_t,cut_mi_t,cut_lo_t,cut_hi_s,cut_lo_s):
         sns.despine(offset=10, trim=True, ax=xtr_0_a)
         
     for i,c in cut_mi_t.iterrows():
-        xtr_1_a.hist(c[11],bins=np.linspace(-1, 10, 10), 
+        xtr_1_a.hist(c[9],bins=np.linspace(-1, 10, 10), 
             histtype=u'bar', density=False)
         xtr_1_a.set_xticks(xticks)
         xtr_1_a.set_xticklabels(xticklabels)   
@@ -680,7 +680,7 @@ def fig3(cut_hi_t,cut_mi_t,cut_lo_t,cut_hi_s,cut_lo_s):
         sns.despine(offset=10, trim=True, ax=xtr_1_a)
         
     for i,c in cut_hi_t.iterrows():
-        xtr_2_a.hist(c[11],bins=np.linspace(-1, 10, 10), 
+        xtr_2_a.hist(c[9],bins=np.linspace(-1, 10, 10), 
             histtype=u'bar', density=False)
         xtr_2_a.set_xticks(xticks)
         xtr_2_a.set_xticklabels(xticklabels)   
@@ -689,7 +689,7 @@ def fig3(cut_hi_t,cut_mi_t,cut_lo_t,cut_hi_s,cut_lo_s):
         sns.despine(offset=10, trim=True, ax=xtr_2_a)
         
     for i,c in cut_lo_s.iterrows():
-        xtr_3_a.hist(c[11],bins=np.linspace(-1, 10, 10), 
+        xtr_3_a.hist(c[9],bins=np.linspace(-1, 10, 10), 
             histtype=u'bar', density=False)
         xtr_3_a.set_xticks(xticks)
         xtr_3_a.set_xticklabels(xticklabels)   
@@ -698,7 +698,7 @@ def fig3(cut_hi_t,cut_mi_t,cut_lo_t,cut_hi_s,cut_lo_s):
         sns.despine(offset=10, trim=True, ax=xtr_3_a)
         
     for i,c in cut_hi_s.iterrows():
-        xtr_4_a.hist(c[11],bins=np.linspace(-1, 10, 10), 
+        xtr_4_a.hist(c[9],bins=np.linspace(-1, 10, 10), 
             histtype=u'bar', density=False)
         xtr_4_a.set_xticks(xticks)
         xtr_4_a.set_xticklabels(xticklabels)   
